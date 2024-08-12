@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "66ba9ccc026f7b46ec1f754f"
+  },
+  "classes": [
+    {
+      "teacher": {
+        "name": "Mr. Smith"
+      },
+      "topic": "Mathematics",
+      "students": [
+        {
+          "name": "Alice"
+        },
+        {
+          "name": "Bob"
+        },
+        {
+          "name": "Charlie"
+        },
+        {
+          "name": "Diana"
+        }
+      ]
+    },
+    {
+      "teacher": {
+        "name": "Ms. Johnson"
+      },
+      "topic": "Science",
+      "students": [
+        {
+          "name": "Eve"
+        },
+        {
+          "name": "Frank"
+        },
+        {
+          "name": "Grace"
+        },
+        {
+          "name": "Heidi"
+        }
+      ]
+    },
+    {
+      "teacher": {
+        "name": "Dr. Brown"
+      },
+      "topic": "History",
+      "students": [
+        {
+          "name": "Ivan"
+        },
+        {
+          "name": "Judy"
+        },
+        {
+          "name": "Karl"
+        },
+        {
+          "name": "Lena"
+        }
+      ]
+    }
+  ]
+}]
