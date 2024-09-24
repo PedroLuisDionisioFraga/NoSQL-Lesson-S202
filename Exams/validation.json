@@ -1,0 +1,61 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    required: [
+      'rating',
+      'rides'
+    ],
+    properties: {
+      rating: {
+        bsonType: 'int',
+        minimum: 1,
+        maximum: 5,
+        description: 'must be an integer'
+      },
+      rides: {
+        bsonType: 'array',
+        required: [
+          'rating',
+          'distance',
+          'value',
+          'passenger'
+        ],
+        properties: {
+          rating: {
+            bsonType: 'int',
+            minimum: 1,
+            maximum: 5,
+            description: 'must be an integer'
+          },
+          distance: {
+            bsonType: 'double',
+            minimum: 0,
+            description: 'must be a float'
+          },
+          value: {
+            bsonType: 'double',
+            minimum: 0,
+            description: 'must be a float'
+          },
+          passenger: {
+            bsonType: 'object',
+            required: [
+              'name',
+              'document'
+            ],
+            properties: {
+              name: {
+                bsonType: 'string',
+                description: 'must be a string'
+              },
+              document: {
+                bsonType: 'string',
+                description: 'must be a string'
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
